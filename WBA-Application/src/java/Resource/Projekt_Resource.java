@@ -54,4 +54,18 @@ public class Projekt_Resource implements Serializable{
         
         return rb.build();
     }
+    
+    @PUT
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response update(@QueryParam("project") Projekt projekt, @QueryParam("title") String new_title,
+            @QueryParam("kurzbeschreibung") String new_kurzbeschreibung, @QueryParam("logopath") String new_logopath){
+        
+        projekt.setTitel(new_title);
+        projekt.setKurzbeschreibung(new_kurzbeschreibung);
+        projekt.setLogopath(new_logopath);
+        
+        Response.ResponseBuilder rb = Response.ok(projekt);
+        
+        return rb.build();
+    }
 }
