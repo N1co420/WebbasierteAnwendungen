@@ -9,6 +9,7 @@ import java.net.URI;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
@@ -38,6 +39,17 @@ public class Artefakt_Resource {
     public Response get(@QueryParam("id") Long id){
         Artefakt artefakt = new Artefakt();
         artefakt.setTitle("Artefakttitel");
+        Response.ResponseBuilder rb = Response.ok(artefakt);
+        
+        return rb.build();
+    }
+    
+    @PUT
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response update(@QueryParam("artefakt") Artefakt artefakt, @QueryParam("title") String new_title, @QueryParam("description") String new_description){
+        artefakt.setTitle(new_title);
+        artefakt.setDescription(new_description);
+        
         Response.ResponseBuilder rb = Response.ok(artefakt);
         
         return rb.build();
