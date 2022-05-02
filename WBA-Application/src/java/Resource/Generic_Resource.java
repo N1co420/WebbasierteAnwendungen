@@ -19,7 +19,7 @@ import javax.ws.rs.core.MediaType;
  * @author DeeD_
  */
 @Path("generic")
-public class GenericResource {
+public class Generic_Resource {
 
     @Context
     private UriInfo context;
@@ -27,7 +27,7 @@ public class GenericResource {
     /**
      * Creates a new instance of GenericResource
      */
-    public GenericResource() {
+    public Generic_Resource() {
     }
 
     /**
