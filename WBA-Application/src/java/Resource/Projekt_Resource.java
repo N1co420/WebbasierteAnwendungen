@@ -70,9 +70,6 @@ public class Projekt_Resource implements Serializable{
         return rb.build();
     }
     
-    @DELETE
-    public void deleteById(@QueryParam("id") Long id){
-        
-    }
+  
     
 }
