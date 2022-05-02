@@ -36,7 +36,7 @@ public class Artefakt_Resource {
     
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response get(@QueryParam("id") Long id){
+    public Response get(@QueryParam("title") String title){
         Artefakt artefakt = new Artefakt();
         artefakt.setTitle("Artefakttitel");
         Response.ResponseBuilder rb = Response.ok(artefakt);
