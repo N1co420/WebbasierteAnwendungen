@@ -1,4 +1,7 @@
-package Resource;
+package Classes;
+
+import Classes.Projekt;
+import Classes.Artefakt;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -10,5 +13,8 @@ package Resource;
  * @author DeeD_
  */
 public class Projekt_Artefakt {
+    
+    Projekt projekt = new Projekt();
+    Artefakt artefakt = new Artefakt();
     
 }

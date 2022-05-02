@@ -1,4 +1,6 @@
-package Resource;
+package Classes;
+
+import javax.ws.rs.Path;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,12 +11,20 @@ package Resource;
  *
  * @author DeeD_
  */
-public class Artefakt {
+@Path("aufgabenbreich")
+public class Aufgabenbereich {
     
+    private Long id;
     private String title;
     private String description;
-    Aufgabenbereich referenz = new Aufgabenbereich();
-    private float worktime;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -31,23 +41,5 @@ public class Artefakt {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public Aufgabenbereich getReferenz() {
-        return referenz;
-    }
-
-    public void setReferenz(Aufgabenbereich referenz) {
-        this.referenz = referenz;
-    }
-
-    public float getWorktime() {
-        return worktime;
-    }
-
-    public void setWorktime(float worktime) {
-        this.worktime = worktime;
-    }
-    
-    
     
 }

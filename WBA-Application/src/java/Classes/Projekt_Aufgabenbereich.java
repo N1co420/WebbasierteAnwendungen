@@ -1,4 +1,7 @@
-package Resource;
+package Classes;
+
+import Classes.Projekt;
+import Classes.Aufgabenbereich;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -13,6 +16,8 @@ public class Projekt_Aufgabenbereich {
     
     Projekt projekt = new Projekt();
     Aufgabenbereich aufgabenbereich = new Aufgabenbereich();
+    
+    
     
     
 }

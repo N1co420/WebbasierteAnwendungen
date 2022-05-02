@@ -1,4 +1,4 @@
-package Resource;
+package Classes;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,11 +9,12 @@ package Resource;
  *
  * @author DeeD_
  */
-public class Aufgabenbereich {
+public class Artefakt {
     
-    private Long id;
     private String title;
     private String description;
+    Aufgabenbereich referenz = new Aufgabenbereich();
+    private float worktime;
 
     public String getTitle() {
         return title;
@@ -30,5 +31,23 @@ public class Aufgabenbereich {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public Aufgabenbereich getReferenz() {
+        return referenz;
+    }
+
+    public void setReferenz(Aufgabenbereich referenz) {
+        this.referenz = referenz;
+    }
+
+    public float getWorktime() {
+        return worktime;
+    }
+
+    public void setWorktime(float worktime) {
+        this.worktime = worktime;
+    }
+    
+    
     
 }
